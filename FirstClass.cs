@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstClass : MonoBehaviour
@@ -12,7 +10,7 @@ public class FirstClass : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("First Class is working successfully");
+        //Debug.Log("First Class is working successfully");
         if (Input.GetKey(KeyCode.Q))
         {
             gameManager.ScriptDestroy(this);

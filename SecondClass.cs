@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SecondClass : MonoBehaviour
@@ -7,13 +5,12 @@ public class SecondClass : MonoBehaviour
     public GameManager gameManager;
     void Start()
     {
-        
+        Debug.Log("Second script was started");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Debug.Log("Second Class is working successfully");
+        //Debug.Log("Second Class is working successfully");
         if (Input.GetKey(KeyCode.E))
         {
             gameManager.NextScript(this);
